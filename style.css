@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
+/* UPDATES: Organized how classes and ids are sorted. */
+
 *{
     margin: 0;
     padding: 0;
@@ -19,16 +21,16 @@ h1{
     height: 120px;
 }
 
-/* Search form, stacking elements side by side
-.search-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 60px;
-}
-*/
+form {
 
-/* Add a flex container for the search form, stacking elements vertically */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 60px;
+    
+}
+
 .search-form {
     display: flex;
     flex-direction: column;
@@ -57,14 +59,37 @@ h1{
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     border-radius: 5px;
-    /* Add margin to separate the button from the input */
     margin-top: 60px; 
     margin-bottom: 40px;
+    transition: opacity 0.2s ease-in-out;
 }
 
-/* Makes the container a flex container, arranges the search results with equal space between them, allows them to wrap to the next line if needed,
- sets a maximum width, and centers the container horizontally on the page. This is a common approach for creating responsive and neatly organized search result 
- layouts on a webpage. */
+/* UPDATE: added a highlighted effect when hovering over the element in the search button */
+#search-button:hover {
+    opacity: 0.8;
+}
+
+#show-more-button {
+    
+    background-image:linear-gradient(to top,#008cba 0%,#fffffe 100%);
+    font-size: 18px;
+    border: none;
+    color: #000000;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 30px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out;
+/*UPDATE: removed display lock and changed to display none to set home page to not display the Show more Button */
+    display: none;
+}
+
+/* UPDATE: added a highlighted effect when hovering over the element in the show more button */
+#show-more-button:hover {
+    opacity: 0.8;
+}
+
 .search-results{
     display: flex;
     justify-content:space-between;
@@ -73,9 +98,7 @@ h1{
     margin: 0 auto;
 }
 
-/* In summary, this CSS rule is typically used to style individual search result items on a webpage. These items have a set width, a full-height appearance,
- rounded corners, a subtle box shadow, and a margin to separate them vertically. The overflow: hidden property is added for safety to prevent any overflowing content
-  from disrupting the layout. */
+
 .search-result{
     margin-bottom: 60px;
     width:30%;
@@ -85,8 +108,7 @@ h1{
     overflow:hidden;
 }
 
-/*Fills their respective containers completely and maintain their aspect ratio, covering the entire container without distortion,
- which is a common practice for responsive image layouts.*/
+
 .search-result img {
     width: 100%;
     height: 100%;
@@ -98,6 +120,7 @@ h1{
     opacity: 0.8;
 }
 
+
 .search-result a{
     font-size: 20px;
     text-decoration: none;
@@ -105,20 +128,6 @@ h1{
     display: block;
     padding: 10px;
     text-transform: capitalize;
-}
-
-#show-more-button {
-    background-color: #008cba;
-    font-size: 18px;
-    border: none;
-    color: #ffff;
-    padding: 10px 20px;
-    text-align: center;
-    display: block;
-    margin: 30px auto;
-    border-radius: 5px;
-    cursor: pointer;
-   /* display: none;*/
 }
 
 @media screen and (max-width:768px) {

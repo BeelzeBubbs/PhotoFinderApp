@@ -1,6 +1,6 @@
-# Photo Finder App v.0.0.1(unfinished)
+# Photo Finder App v.0.0.2(unfinished)
 
-This is a basic web app that searches and displays photos. Some aspects of index.HTML and style.css are inspired from a variety of youtube tutorials listed below:
+This is a basic web app that searches and displays photos. Some aspects of the js file, index.HTML and style.css are inspired from a variety of youtube tutorials listed below:
 
 "JavaScript Project | Image Search App With JavaScript API" by Tech2 etc on YouTube
 
@@ -18,7 +18,7 @@ This is a solo project aiming to build my knowledge in Javascript, SQL, CSS, and
 
 ## Features
 
-Currently in an inoperable state. Styling is the only thing finished. Images displayed containt text underneath that opens the image from the source in a new tab. 'index.html' is currently incomplete.
+Currently operable state. Styling is finished. Images displayed containt text underneath that opens the image from the source in a new tab. 
 
 ## Contributing
 
@@ -52,5 +52,11 @@ https://www.youtube.com/watch?v=oaliV2Dp7WQ&list=PL9bD98LkBR7P16BndaNtP4x6Wf5Ib8
 
 
 
-## Changelog [Optional]
+## Changelog 
 
+Comments added for educational purposes
+Customized styling of Show more button
+Hid show more button in landing screen
+Made show more button only appear when something has been searched for
+Finished default landing screen.
+Finished writing the scripts and testing for basic photo finding functionality.
