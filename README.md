@@ -1,6 +1,6 @@
 # Photo Finder App v.0.0.2(unfinished)
 
-This is a basic web app that searches and displays photos. Some aspects of the js file, index.HTML and style.css are inspired from a variety of youtube tutorials listed below:
+This is a basic web app that searches and displays photos. Some aspects of script.js, index.HTML and style.css are inspired from a variety of youtube tutorials listed below:
 
 "JavaScript Project | Image Search App With JavaScript API" by Tech2 etc on YouTube
 
