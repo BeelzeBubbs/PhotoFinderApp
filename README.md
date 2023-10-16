@@ -18,7 +18,7 @@ This is a solo project aiming to build my knowledge in Javascript, SQL, CSS, and
 
 ## Features
 
-Currently operable state. Styling is finished. Images displayed containt text underneath that opens the image from the source in a new tab. 
+Currently operable state. Styling is finished. Images displayed contain text underneath that opens the image from the source in a new tab. 
 
 ## Contributing
 
