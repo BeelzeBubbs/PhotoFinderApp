@@ -33,7 +33,7 @@ Also feel free to point out/address mistakes in my comments, code, etc.
         2. **Clone the Repository**: Clone your forked repository to your local machine using the following command:
 
           bash
-          git clone https://github.com/BeelzeBubbs/PhotoFinderApp.git
+          git clone https://github.com/BeelzeBubbs/PhotoFinderApp/tree/v0.0.1.git
 
 ## Usage
 
