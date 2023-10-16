@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    line-height: 1.6;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin: 150px 0 30px 0;
+    height: 120px;
+}
+
+/* Search form, stacking elements side by side
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+*/
+
+/* Add a flex container for the search form, stacking elements vertically */
+.search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#search-input{
+    width: 60%;
+    max-width: 400px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 0 6px rgba(0,0,0,0.4);
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+}
+
+#search-button{
+    padding: 5px 20px;
+    background-image:linear-gradient(to bottom,#008cba 0%,#fffffe 100%);
+    color:#020202bd;
+    border:none;
+    font-size:18px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border-radius: 5px;
+    /* Add margin to separate the button from the input */
+    margin-top: 60px; 
+    margin-bottom: 40px;
+}
+
+/* Makes the container a flex container, arranges the search results with equal space between them, allows them to wrap to the next line if needed,
+ sets a maximum width, and centers the container horizontally on the page. This is a common approach for creating responsive and neatly organized search result 
+ layouts on a webpage. */
+.search-results{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* In summary, this CSS rule is typically used to style individual search result items on a webpage. These items have a set width, a full-height appearance,
+ rounded corners, a subtle box shadow, and a margin to separate them vertically. The overflow: hidden property is added for safety to prevent any overflowing content
+  from disrupting the layout. */
+.search-result{
+    margin-bottom: 60px;
+    width:30%;
+    height:100%;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    overflow:hidden;
+}
+
+/*Fills their respective containers completely and maintain their aspect ratio, covering the entire container without distortion,
+ which is a common practice for responsive image layouts.*/
+.search-result img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.search-result:hover img{
+    opacity: 0.8;
+}
+
+.search-result a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+#show-more-button {
+    background-color: #008cba;
+    font-size: 18px;
+    border: none;
+    color: #ffff;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    margin: 30px auto;
+    border-radius: 5px;
+    cursor: pointer;
+   /* display: none;*/
+}
+
+@media screen and (max-width:768px) {
+    .search-results{
+        padding: 20px;
+    }
+    .search-result{
+        width:45%;
+    }
+   
+}
+
+@media screen and (max-width:480px) {
+    .search-result{
+        width:100%;
+    }
+}
